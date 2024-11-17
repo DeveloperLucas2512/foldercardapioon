@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to bottom, #e63946, #900c3f);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header-content .title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header-content .subtitle {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.intro,
+.features,
+.products,
+.benefits,
+.contact {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.intro h2,
+.features h2,
+.products h2,
+.benefits h2,
+.contact h2 {
+  margin-bottom: 15px;
+  color: #900c3f;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.features ul,
+.products ul,
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li,
+.products ul li,
+.benefits ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.products p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.product-highlight-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-highlight-list li {
+  margin: 15px 0;
+  padding: 15px;
+  background: #e8e8e8;
+  border-left: 4px solid #900c3f;
+  border-radius: 5px;
+  animation: slideIn 0.6s ease-out;
+}
+
+.contact {
+  background: #f4f4f4;
+  padding: 30px;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 40px 15px;
+  }
+
+  .header-content .title {
+    font-size: 2.5rem;
+  }
+
+  .header-content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .intro,
+  .features,
+  .products,
+  .benefits,
+  .contact {
+    padding: 20px 15px;
+  }
+
+  .product-highlight-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
